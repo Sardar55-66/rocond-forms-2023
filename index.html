@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/sass/style.css">
+    <link href="https://fonts.cdnfonts.com/css/microsoft-yahei" rel="stylesheet">
+    <title>Forms</title>
+</head>
+<body>
+    
+<div class="container">
+    <div class="img img_size">
+        
+    </div>
+
+    <div class="forms forms_size">
+
+        <p class="forms__title">Стать партнером</p>
+
+        <p class="forms__text">Мы с радостью проконсультируем Вас по продукту и предложим подходящий варинат решения!</p>
+        
+        <form class="forms__form" action="#" method="post" name="MyForm" autocomplete="off">
+            <label for="lastname">Фамилия</label>
+            <input class="lastname validation-check" id="lastname" type="text">
+
+            <label  for="name">Имя</label>
+            <input class="forms__name validation-check" id="name" type="text">
+
+            <label for="surname">Отчество</label>
+            <input class="forms__surname validation-check" id="surname" type="text">
+
+            <label for="city">Город</label>
+            <!-- <input class="forms__city validation-check" id="city" type="text"> -->
+            <select name="city" id="city" class="forms__city">
+                <option value="" selected>Москва</option>
+                <option value="">Санкт-Петербург</option>
+            </select>
+
+            <label for="phone">Телефон</label>
+            <input class="forms__phone validation-check" id="phone" type="number">
+
+            <div class="files files_mod">
+                <label for="file" class="files__input-btn first-label"></label>
+                <label for="file" class="files__input-btn sec-label"></label>
+
+                <div class="files__input-first-wrapper">
+                    <input id="file" class="files__input first-input" type="file">
+                    <span class="files__icon-wrapper first-wrapper"><img class="first-img" src="./src/icons/basket-icon.svg" alt="busket"></span>
+                    <span class="files__btn-text first-btn-text">Upload file</span>
+    
+                </div>
+
+                <div class="files__input-sec-wrapper">
+                    
+                <input id="file" class="files__input sec-input" type="file">
+                <span class="files__icon-wrapper sec-wrapper"><img class="sec-img" src="./src/icons/basket-icon.svg" alt="busket"></span>
+                <span class="files__btn-text sec-btn-text">Upload file</span>
+                </div>
+            </div>
+
+           <div class="files__agreement-wrapper">
+            <input id="agreement" type="checkbox" class="forms__agreement">
+            <label for="agreement">Нажимая кнопку «отправить», вы даете согласие на обработку персональных данных.</label>
+           
+           </div>
+
+            <input type="submit" class="forms__submit-btn">
+        </form>
+    </div>
+</div>
+
+
+<script src="./src/js/main.js"></script>
+</body>
+</html>
