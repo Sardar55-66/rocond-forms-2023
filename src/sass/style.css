@@ -1,0 +1,178 @@
+@import './media.css';
+
+    @font-face {
+        font-family: Microsoft YaHei UI, Light;
+        src: url(../fonts/microsoft-jhenghei.ttf); 
+       }
+
+       body {
+        box-sizing: border-box;
+        font-family: 'Microsoft YaHei UI', sans-serif;
+        }
+    
+
+
+    .container {
+        max-width: 100%;
+        display: flex;
+        min-height: 450px;
+        }
+    .img_size {
+        width: 30%;
+        min-height: 980px;
+        background: url(../img/team-work.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+        }
+    .img__team-work {
+        max-width: 100%
+        }
+    
+    .forms_size {
+        max-width: 30%;
+    }
+    .forms__title, .forms__text {
+    
+        margin-left: 50px;
+    }
+    
+    .forms__title {
+        font-size: 55px;
+        font-weight: lighter;
+        margin: 30px;
+        margin-left: 45px;
+    }
+    .forms__form {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+    input[type="text"], input[type="number"], .forms__city {
+    
+        border-radius: 5px;
+        height: 50px;
+        border: 1px solid rgba(171, 171, 171, 1);
+        font-size: 24px;
+    }
+    .forms__city {
+        appearance: none;
+        display: block;
+        box-sizing: border-box;
+        background: url(../icons/menu-arrows.svg);
+        background-repeat: no-repeat, repeat;
+        background-position: right .7em top 50%, 0 0;
+        background-size: 1.65em auto, 100%;
+        cursor: pointer;
+    }
+    
+    input:first-child {
+    
+        margin-bottom: 0;
+    }
+    label:not():nth-child(7) {
+        font-weight: bold;
+        margin-bottom: 10px;
+        
+    }
+    label {
+        margin-top: 30px;
+    }
+    label:first-child, label:last-child {
+        margin: 0;
+    }
+    .files_mod {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+    .forms__files {
+        display: flex;
+    }
+    .files__input {
+        display: flex;
+        
+    }
+    .files__input-first-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    .files__input-sec-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    
+    .files__agreement-wrapper {
+        display: flex;
+        align-items: flex-start;
+    }
+    .forms__agreement {
+        height: 20px;
+        width: 30px;
+        border-radius: 5px;
+        
+    }
+    .first-input {
+        order: 1;
+    }
+    .sec-input {
+        order: 2;
+    }
+    .first-label {
+        background: #00BCD0;
+    }
+    .files__icon-wrapper {
+        height: 60px;
+        width: 60px;
+        margin-right: 15px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        
+    }
+    .files__btn-text {
+        display: none;
+        line-height: 1;
+        margin-top: 1px;
+        order: 1;
+    }
+    .files__input-btn {
+        display: none;
+        width: 100%;
+        max-width: 290px;
+        height: 60px;
+        font-size: 1.125rem;
+        
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 3px;
+        cursor: pointer;
+        motion: auto;
+    }
+    .sec-btn-text {
+        order: 2;
+    }
+    .forms__submit-btn {
+        margin-top: 50px;
+        width: 245px;
+        height: 45px;
+        border-radius: 5px;
+        border: 1px solid #00BCD0;
+        background: #FFFFFF;
+        font-size: 20px;
+        color: black;
+        cursor: pointer;
+    }
+    .input-field-error {
+        border: 1px solid rgba(252, 3, 36, 1) !important;
+        color: rgba(252, 3, 36, 1) !important
+    }
+    .error {
+        border-radius: 5px;
+        margin-top: 0;
+        font-size: 12px;
+        color: rgba(252, 3, 36, 1);
+    }
